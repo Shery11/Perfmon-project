@@ -1,0 +1,30 @@
+<h2 class="sub-header">List of Customers</h2>
+<div class="table-responsive" ng-init="getCustomers()">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Name</th>
+                  <th>Number</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr ng-repeat="x in customers">
+                  <td>{{x.id}}</td>
+                  <td>{{x.customerName}}</td>
+                  <td>{{x.customerNumber}}</td>
+                  <td><a href="#/customers/details/{{x.id}}" class="btn btn-primary">Details</a><a href="#/invoices/edit/{{x.id}}" class="btn btn-default">Edit</a> <button ng-click="deleteCustomer(x.id)" class="btn btn-danger">Delete</button></td>
+                </tr>
+               
+              </tbody>
+            </table>
+
+
+          </div>
+
+  <a href="#/customers/add" type="button" class="btn btn-primary">Add</a>
+        
+
+
+
+

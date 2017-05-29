@@ -1,0 +1,22 @@
+
+
+<div class="row" ng-init="getCustomers()">
+  
+  
+  <div class="col-sm-4" ng-repeat="x in customers | limitTo:6">
+    <div class="card card-block">
+      <h3 class="card-title">Name: {{x.customerName}}</h3>
+      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+
+
+</div>
+
+
+
+<a  type="button" class="btn btn-primary">Add new Customer</a>
+<a href="#/customerList" class="btn btn-primary">List All Customers</a>
+
+
